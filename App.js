@@ -11,6 +11,8 @@ import Data from './screen/Data';
 import EditSensor from './screen/EditSensor';
 import RealData from './screen/Realdata';
 import SimulData from './screen/tab/SimulData';
+import apple from './screen/apple';
+import History from './screen/History';
 
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -74,6 +76,30 @@ export default class App extends Component {
           <Stack.Screen name="RealData" component={RealData}
             options={{
               title: 'Real Data',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+            <Stack.Screen name="Apple" component={apple}
+            options={{
+              title: 'Apple',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+            <Stack.Screen name="History" component={History}
+            options={{
+              title: 'Histoyr',
               headerStyle: {
                 backgroundColor: '#85BB65',
               },
