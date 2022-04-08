@@ -40,7 +40,7 @@ export default class Home extends Component {
 
                     <View style={styles.taglist}>
                         <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('RealData')}
+                            onPress={() => this.props.navigation.navigate('Apple')}
                             style={styles.tag}>
                             <Image
                                 source={require("../assets/images/apple.jpeg")}
@@ -59,7 +59,7 @@ export default class Home extends Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Data')}
+                            onPress={() => this.props.navigation.navigate('Banana')}
                             style={styles.tag}>
                             <Image
                                 source={require("../assets/images/banana.jpeg")}
@@ -78,7 +78,7 @@ export default class Home extends Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Data')}
+                            onPress={() => this.props.navigation.navigate('Peach')}
                             style={styles.tag}>
                             <Image
                                 source={require("../assets/images/peach.jpeg")}
@@ -97,7 +97,7 @@ export default class Home extends Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Data')}
+                            onPress={() => this.props.navigation.navigate('Chilli')}
                             style={styles.tag}>
                             <Image
                                 source={require("../assets/images/chilli.jpeg")}
@@ -116,7 +116,7 @@ export default class Home extends Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Data')}
+                            onPress={() => this.props.navigation.navigate('Tomato')}
                             style={styles.tag}>
                             <Image
                                 source={require("../assets/images/tomato.jpeg")}
@@ -135,7 +135,7 @@ export default class Home extends Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Data')}
+                            onPress={() => this.props.navigation.navigate('Potato')}
                             style={styles.tag}>
                             <Image
                                 source={require("../assets/images/potato.jpeg")}

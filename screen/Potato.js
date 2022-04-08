@@ -4,13 +4,13 @@ import { RootTagContext } from 'react-native/Libraries/ReactNative/RootTag';
 import { render } from 'react-native/Libraries/Renderer/implementations/ReactNativeRenderer-prod';
 //import { symbolicateLogNow } from 'react-native/Libraries/LogBox/Data/LogBoxData';
 
-export default class apple extends Component {
+export default class Potato extends Component {
 
     render() {
         return (
             <View style={styles.container}>
                 <Image
-                    source={require("../assets/images/background/applebackground.jpeg")}
+                    source={require("../assets/images/background/potato.jpeg")}
                     style={{
                         width: 400,
                         height: 350,
@@ -37,7 +37,7 @@ export default class apple extends Component {
                     <View style={styles.info}>
                         <Text style={{ fontSize: 20, color: "#6B706C", }}> Weather tpme</Text>
                         <Text style={{ fontSize: 20, marginLeft: 50, }}>75 F</Text>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
+                        <TouchableOpacity onPress={() => { alert("you clicked me") }}>
                             <Text style={{ fontSize: 20, marginLeft: 60, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>
@@ -45,7 +45,7 @@ export default class apple extends Component {
                     <View style={styles.info}>
                         <Text style={{ fontSize: 20, color: "#6B706C", }}> Wind speed</Text>
                         <Text style={{ fontSize: 20, marginLeft: 70, }}>13 mph</Text>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
+                        <TouchableOpacity onPress={() => { alert("you clicked me") }}>
                             <Text style={{ fontSize: 20, marginLeft: 35, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>
@@ -53,7 +53,7 @@ export default class apple extends Component {
                     <View style={styles.info}>
                         <Text style={{ fontSize: 20, color: "#6B706C", }}> Soil moisture</Text>
                         <Text style={{ fontSize: 20, marginLeft: 64, }}>80%</Text>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
+                        <TouchableOpacity onPress={() => { alert("you clicked me") }}>
                             <Text style={{ fontSize: 20, marginLeft: 56, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>

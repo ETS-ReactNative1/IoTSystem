@@ -13,6 +13,11 @@ import RealData from './screen/Realdata';
 import SimulData from './screen/tab/SimulData';
 import apple from './screen/apple';
 import History from './screen/History';
+import Banana from './screen/Banana';
+import Peach from './screen/Peach';
+import Chilli from './screen/Chilli';
+import Tomato from './screen/Tomato';
+import Potato from './screen/Potato';
 
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -85,7 +90,7 @@ export default class App extends Component {
                 fontSize: 20,
               },
             }} />
-            <Stack.Screen name="Apple" component={apple}
+          <Stack.Screen name="Apple" component={apple}
             options={{
               title: 'Apple',
               headerStyle: {
@@ -97,9 +102,73 @@ export default class App extends Component {
                 fontSize: 20,
               },
             }} />
-            <Stack.Screen name="History" component={History}
+          <Stack.Screen name="History" component={History}
             options={{
-              title: 'Histoyr',
+              title: 'History',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+          <Stack.Screen name="Banana" component={Banana}
+            options={{
+              title: 'Banana',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+
+          <Stack.Screen name="Peach" component={Peach}
+            options={{
+              title: 'Peach',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+
+          <Stack.Screen name="Chilli" component={Chilli}
+            options={{
+              title: 'Chilli',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+
+          <Stack.Screen name="Tomato" component={Tomato}
+            options={{
+              title: 'Tomato',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+
+          <Stack.Screen name="Potato" component={Potato}
+            options={{
+              title: 'Potato',
               headerStyle: {
                 backgroundColor: '#85BB65',
               },
