@@ -13,6 +13,8 @@
     "@react-navigation/material-top-tabs": "^6.1.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/stack": "^6.1.1",
+    "@rneui/base": "github:react-native-elements/react-native-elements#base",
+    "@rneui/themed": "github:react-native-elements/react-native-elements#themed",
     "react": "17.0.2",
     "react-native": "^0.68.0",
     "react-native-gesture-handler": "^2.3.2",

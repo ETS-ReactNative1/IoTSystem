@@ -2,11 +2,11 @@ import React, { Component, useState } from 'react';
 import { StyleSheet, View, Text, ScrollView, TextInput, TouchableOpacity, Image, Dimensions } from 'react-native';
 
 
-export default class Home extends Component {
+export default class T104 extends Component {
     render() {
         return (
             <View style={styles.container}>
-                {/* <ScrollView>
+                <ScrollView>
                     <View style={styles.searchbar}>
                         <TextInput
                             style={styles.input}
@@ -52,7 +52,7 @@ export default class Home extends Component {
                                     style={styles.tagDiscription}>information...</Text>
                             </View>
                             <TouchableOpacity
-                                onPress={() => this.props.navigation.navigate('EditSensor')}
+                                onPress={() => this.props.navigation.navigate('Edit')}
                                 style={styles.edit}>
                                 <Text style={styles.editText}>Edit</Text>
                             </TouchableOpacity>
@@ -156,16 +156,7 @@ export default class Home extends Component {
                     </View>
 
 
-                </ScrollView> */}
-
-                <TouchableOpacity
-                    onPress={() => this.props.navigation.navigate('T104')}
-                >
-                    <Image
-                        source={require("../assets/images/map.png")}
-                        style={styles.map}
-                    />
-                </TouchableOpacity>
+                </ScrollView>
             </View>
         );
     }
@@ -174,10 +165,6 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-    },
-    map: {
-        width: 390,
-        height: 760,
     },
     searchbar: {
         flexDirection: "row",
@@ -248,11 +235,11 @@ const styles = StyleSheet.create({
         color: '#535151',
         fontSize: 16,
     },
-    edit: {
+    edit:{
         marginTop: 30,
-        marginLeft: 70,
+        marginLeft: 70, 
     },
-    editText: {
+    editText:{
         color: '#72EF5E',
         fontWeight: '400',
         fontSize: 22,
