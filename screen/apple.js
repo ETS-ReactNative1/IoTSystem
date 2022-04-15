@@ -22,13 +22,13 @@ export default class apple extends Component {
                             fontWeight: '500',
                             fontSize: 30,
                         }}>Apple</Text>
-                        <TouchableOpacity onPress={() => { alert("you clicked me") }}>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('Camera')}>
                             <Image
-                                source={require("../assets/images/edit.png")}
+                                source={require("../assets/images/camera.png")}
                                 style={{
-                                    width: 35,
-                                    height: 35,
-                                    marginLeft: 195,
+                                    width: 40,
+                                    height: 40,
+                                    marginLeft: 193,
                                 }} />
                         </TouchableOpacity>
 

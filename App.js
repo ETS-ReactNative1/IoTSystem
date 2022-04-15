@@ -8,7 +8,7 @@ import { View, Text, Button, TouchableOpacity, Image, StyleSheet } from 'react-n
 
 import Home from './screen/Home';
 import Data from './screen/Data';
-import EditSensor from './screen/EditSensor';
+import Edit from './screen/Edit';
 import RealData from './screen/Realdata';
 import SimulData from './screen/tab/SimulData';
 import apple from './screen/apple';
@@ -18,6 +18,8 @@ import Peach from './screen/Peach';
 import Chilli from './screen/Chilli';
 import Tomato from './screen/Tomato';
 import Potato from './screen/Potato';
+import T104 from './screen/T104';
+import Camera from './screen/Camera';
 
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -68,6 +70,32 @@ export default class App extends Component {
           <Stack.Screen name="Data" component={Data}
             options={{
               title: 'Data',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+
+            <Stack.Screen name="Camera" component={Camera}
+            options={{
+              title: 'Camera',
+              headerStyle: {
+                backgroundColor: '#85BB65',
+              },
+              headerTintColor: 'white',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                fontSize: 20,
+              },
+            }} />
+
+          <Stack.Screen name="T104" component={T104}
+            options={{
+              title: 'T104',
               headerStyle: {
                 backgroundColor: '#85BB65',
               },
@@ -192,9 +220,9 @@ export default class App extends Component {
               },
             }} /> */}
 
-          <Stack.Screen name="EditSensor" component={EditSensor}
+          <Stack.Screen name="Edit" component={Edit}
             options={{
-              title: 'Edit Sensor',
+              title: 'Edit',
               headerStyle: {
                 backgroundColor: '#85BB65',
               },
