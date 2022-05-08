@@ -13,7 +13,7 @@ const Cameraview = ({navigation}) => {
               flexDirection: 'row',
               justifyContent: 'space-between',
               marginTop: -30
-      }}>
+      }}> 
       <View>
 
       </View>
