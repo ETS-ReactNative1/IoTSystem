@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Button, Text} from 'react-native';
-import Video from 'react-native-video';
+//import Video from 'react-native-video';
 import {Dimensions} from 'react-native';
 import Blink from '../components/Blink';
 import {SafeAreaView} from 'react-native-safe-area-context';
