@@ -20,6 +20,7 @@ Allows farmers to obtain “at a glance” information about their farm in real-
  
 ## Sample Demo Screenshots
 
+![Simulator Screen Shot - iPhone 13 - 2022-05-13 at 12 08 00](https://user-images.githubusercontent.com/46858191/168374904-69e71fce-1cb5-40e3-aa44-559962a63ca7.png)
 
 ## Project Components
 - Frontend 
