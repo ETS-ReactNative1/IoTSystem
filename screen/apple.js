@@ -4,7 +4,7 @@ import { RootTagContext } from 'react-native/Libraries/ReactNative/RootTag';
 import { render } from 'react-native/Libraries/Renderer/implementations/ReactNativeRenderer-prod';
 //import { symbolicateLogNow } from 'react-native/Libraries/LogBox/Data/LogBoxData';
 
-export default class apple extends Component {
+export default class Apple extends Component {
 
     render() {
         return (
@@ -35,24 +35,45 @@ export default class apple extends Component {
                     </View>
 
                     <View style={styles.info}>
-                        <Text style={{ fontSize: 20, color: "#6B706C", }}> Weather tpme</Text>
-                        <Text style={{ fontSize: 20, marginLeft: 50, }}>75 F</Text>
+                        <View style={styles.topic}>
+                            <Text style={{ fontSize: 20, color: "#6B706C", }}> Weather temp</Text>
+                        </View>
+                        <Image
+                            style={styles.image}
+                            source={{
+                                uri: 'http://143.244.179.77/apple_temp.png',
+                            }}
+                        />
                         <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
                             <Text style={{ fontSize: 20, marginLeft: 60, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.info}>
-                        <Text style={{ fontSize: 20, color: "#6B706C", }}> Wind speed</Text>
-                        <Text style={{ fontSize: 20, marginLeft: 70, }}>13 mph</Text>
+                        <View style={styles.topic}>
+                            <Text style={{ fontSize: 20, color: "#6B706C", }}> Wind speed</Text>
+                        </View>
+                        <Image
+                            style={styles.wind}
+                            source={{
+                                uri: 'http://143.244.179.77/apple_wind.png',
+                            }}
+                        />
                         <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
                             <Text style={{ fontSize: 20, marginLeft: 35, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.info}>
-                        <Text style={{ fontSize: 20, color: "#6B706C", }}> Soil moisture</Text>
-                        <Text style={{ fontSize: 20, marginLeft: 64, }}>80%</Text>
+                        <View style={styles.topic}>
+                            <Text style={styles.text}> Soil moisture</Text>
+                        </View>
+                        <Image
+                            style={styles.image}
+                            source={{
+                                uri: 'http://143.244.179.77/apple_moisture.png',
+                            }}
+                        />
                         <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
                             <Text style={{ fontSize: 20, marginLeft: 56, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
@@ -88,6 +109,25 @@ const styles = StyleSheet.create({
         marginTop: 30,
         marginLeft: 20,
 
+    },
+    topic: {
+        width: 150,
+    },
+    text: {
+        fontSize: 20,
+        color: "#6B706C",
+    },
+    image: {
+        marginLeft: 10,
+        width: 68,
+        height: 32,
+
+    },
+    wind:{
+        marginLeft: 9,
+        marginTop: -10,
+        width: 90,
+        height: 40,
     },
 
 

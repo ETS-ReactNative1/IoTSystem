@@ -21,7 +21,7 @@ export default class Potato extends Component {
                         <Text style={{
                             fontWeight: '500',
                             fontSize: 30,
-                        }}>Apple</Text>
+                        }}>Potato</Text>
                         <TouchableOpacity onPress={() => { alert("you clicked me") }}>
                             <Image
                                 source={require("../assets/images/edit.png")}
@@ -35,25 +35,46 @@ export default class Potato extends Component {
                     </View>
 
                     <View style={styles.info}>
-                        <Text style={{ fontSize: 20, color: "#6B706C", }}> Weather tpme</Text>
-                        <Text style={{ fontSize: 20, marginLeft: 50, }}>75 F</Text>
-                        <TouchableOpacity onPress={() => { alert("you clicked me") }}>
+                    <View style={styles.topic}>
+                        <Text style={{ fontSize: 20, color: "#6B706C", }}> Weather temp</Text>
+                        </View>
+                        <Image
+                            style={styles.image}
+                            source={{
+                                uri: 'http://143.244.179.77/potato_temp.png',
+                            }}
+                        />
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
                             <Text style={{ fontSize: 20, marginLeft: 60, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.info}>
+                    <View style={styles.topic}>
                         <Text style={{ fontSize: 20, color: "#6B706C", }}> Wind speed</Text>
-                        <Text style={{ fontSize: 20, marginLeft: 70, }}>13 mph</Text>
-                        <TouchableOpacity onPress={() => { alert("you clicked me") }}>
+                        </View>
+                        <Image
+                            style={styles.wind}
+                            source={{
+                                uri: 'http://143.244.179.77/potato_wind.png',
+                            }}
+                        />
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
                             <Text style={{ fontSize: 20, marginLeft: 35, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.info}>
+                    <View style={styles.topic}>
                         <Text style={{ fontSize: 20, color: "#6B706C", }}> Soil moisture</Text>
-                        <Text style={{ fontSize: 20, marginLeft: 64, }}>80%</Text>
-                        <TouchableOpacity onPress={() => { alert("you clicked me") }}>
+                        </View>
+                        <Image
+                            style={styles.image}
+                            source={{
+                                uri: 'http://143.244.179.77/potato_moisture.png',
+                            }}
+                        />
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('History')}>
                             <Text style={{ fontSize: 20, marginLeft: 56, color: "#66D24B", }}>History</Text>
                         </TouchableOpacity>
                     </View>
@@ -88,6 +109,21 @@ const styles = StyleSheet.create({
         marginTop: 30,
         marginLeft: 20,
 
+    },
+    image:{
+        marginLeft: 10,
+        width: 68,
+        height: 32,
+
+    },
+    topic: {
+        width: 150,
+    },
+    wind:{
+        marginLeft: 9,
+        marginTop: -10,
+        width: 90,
+        height: 40,
     },
 
 

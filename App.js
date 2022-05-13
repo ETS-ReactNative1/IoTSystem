@@ -11,7 +11,7 @@ import Data from './screen/Data';
 import Edit from './screen/Edit';
 import RealData from './screen/Realdata';
 import SimulData from './screen/tab/SimulData';
-import apple from './screen/apple';
+import Apple from './screen/Apple';
 import History from './screen/History';
 import Banana from './screen/Banana';
 import Peach from './screen/Peach';
@@ -118,7 +118,7 @@ export default class App extends Component {
                 fontSize: 20,
               },
             }} />
-          <Stack.Screen name="Apple" component={apple}
+          <Stack.Screen name="Apple" component={Apple}
             options={{
               title: 'Apple',
               headerStyle: {

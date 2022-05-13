@@ -25,7 +25,7 @@ export default class Edit extends Component {
 
                 <View>
                     <View style={{ flexDirection: 'row', marginTop: 35, }}>
-                        <Text style={styles.title}>Discription</Text>
+                        <Text style={styles.title}>Description</Text>
                         <TextInput
                             style={styles.input}
                             placeholder='Just planted' />
@@ -65,7 +65,7 @@ export default class Edit extends Component {
                     <View style={{ flexDirection: 'row', marginTop: 35, }}>
                         <Text style={styles.title}>Add sensor</Text>
                         <View>
-                            <Text style={styles.sensor}>Weather tmpe</Text>
+                            <Text style={styles.sensor}>Weather temp</Text>
                             <Text style={styles.sensor}>Wind speed</Text>
                             <Text style={styles.sensor}>Soil moisture</Text>
                         </View>
