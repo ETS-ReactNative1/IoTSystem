@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, Button, TouchableOpacity, Image, Dimensions } f
 import { RootTagContext } from 'react-native/Libraries/ReactNative/RootTag';
 import { render } from 'react-native/Libraries/Renderer/implementations/ReactNativeRenderer-prod';
 //import { symbolicateLogNow } from 'react-native/Libraries/LogBox/Data/LogBoxData';
+import { Linking } from 'react-native';
 
 export default class Apple extends Component {
 
@@ -22,7 +23,7 @@ export default class Apple extends Component {
                             fontWeight: '500',
                             fontSize: 30,
                         }}>Apple</Text>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('Camera')}>
+                        <TouchableOpacity onPress={() => Linking.openURL('http://192.168.0.53:8000/index.html')}>
                             <Image
                                 source={require("../assets/images/camera.png")}
                                 style={{
