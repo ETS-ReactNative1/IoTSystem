@@ -1,76 +1,61 @@
-import React, { Component, useState } from 'react';
-import { StyleSheet, View, Text, ScrollView, TextInput, TouchableOpacity, Image, Dimensions } from 'react-native';
+import React from 'react';
+import {View, StyleSheet, Button, Text} from 'react-native';
+import Video from 'react-native-video';
+import {Dimensions} from 'react-native';
+import Blink from '../components/Blink';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
+const Cameraview = ({navigation}) => {
+  const onSelectSwitch = () => {};
+  return (
+    <SafeAreaView>
+      <View style ={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              marginTop: -30
+      }}> 
+      <View>
 
-export default class Camera extends Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                <View style={styles.header}>
-                    <TouchableOpacity style={styles.live}>
-                        <Text style={{ color: "red", fontSize: 25, fontWeight: "900", marginTop: -5, }}> .</Text>
-                        <Text style={{ color: "white", fontSize: 25, fontWeight: "300" }}> Live </Text>
-                    </TouchableOpacity>
+      </View>
 
-                    <Text style={{ color: "#5A8154", fontSize: 25, fontWeight: "300", marginTop: 10, marginLeft: 10, }}> Apple </Text>
+        <View
+          style={{
+            width: 250,
+            height: 35,
+            backgroundColor: 'grey',
+            alignContent: 'center',
+            justifyContent: 'center',
+            borderRadius: 10,
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingTop: 10,
+          }}>
+          <Blink>
+            <View
+              style={{
+                width: 5,
+                height: 5,
+                borderRadius: 10,
+                right: 8,
+                backgroundColor: 'red',
+              }}
+            />
+          </Blink>
+          <Text
+            style={{
+              textAlign: 'center',
+              color: 'white',
+            }}>
+            Live
+          </Text>
+        </View>
 
-                    <TouchableOpacity style={styles.camera}>
-                        <Text style={{ color: "#26D476", fontSize: 16, fontWeight: "300", marginTop: 5, }}> Camera #1</Text>
+        <View>
 
-                    </TouchableOpacity>
-                </View>
+        </View>
+      </View>
+    </SafeAreaView>
+  );
+};
 
-                <Image
-                    source={require("../assets/images/appletree.jpeg")}
-                    style={styles.appletree}
-                />
-                <View stle ={styles.operation}>
-
-                </View>
-
-
-            </View>
-        );
-    }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    header: {
-        flexDirection: 'row',
-        height: 50,
-        backgroundColor: "#EBFED3",
-    },
-    live: {
-        flexDirection: 'row',
-        backgroundColor: "#97E747",
-        // marginTop: 10,
-        margin: 10,
-        marginLeft: 20,
-        width: 70,
-        borderRadius: 6,
-    },
-    camera: {
-        borderColor: "#85BB65",
-        borderWidth: 1,
-        margin: 10,
-        marginLeft: 90,
-        width: 90,
-        borderRadius: 6,
-    },
-    appletree:{
-        width: 390,
-        height: 710,
-        //position: 'relative',
-    },
-    operation:{
-        marginVertical: 90,
-        backgroundColor: "black",
-        width: 130,
-        height: 630,
-        //position: "absolute",
-    },
-
-});
+export default Cameraview;

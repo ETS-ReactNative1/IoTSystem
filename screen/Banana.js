@@ -81,6 +81,8 @@ export default class Banana extends Component {
 
                 </View>
 
+            
+
             </View>
         );
     }

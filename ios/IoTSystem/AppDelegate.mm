@@ -15,6 +15,14 @@
 #import <ReactCommon/RCTTurboModuleManager.h>
 
 #import <react/config/ReactNativeConfig.h>
+#import <GoogleMaps/GoogleMaps.h>
+
+@implementation AppDelegate
+
+(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+   [GMSServices provideAPIKey:@"AIzaSyDAFOMt0aIKUKBxOijLrRtMd2JTiMzo0f4"]; // add this line using the api key obtained from Google Console
+}
 
 @interface AppDelegate () <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate> {
   RCTTurboModuleManager *_turboModuleManager;
