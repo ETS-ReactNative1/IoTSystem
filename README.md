@@ -1,5 +1,7 @@
 # IoTSystem
 
+Note: Some of the functionality is not always available e.g the live camera runs on raspberry pi and cannot be connected perpetually for just this project
+
 # CMPE 195 - Smart Agriculture Mobile Application
 University Name: San Jose State University
 
